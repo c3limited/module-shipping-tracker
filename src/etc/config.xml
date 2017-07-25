@@ -43,6 +43,13 @@
                 <model>WebShopApps\Tracker\Model\Carrier\Tracker1</model>
                 <title>WebShopApps Tracker 1</title>
             </tracker1>
+            <tracker2>
+                <active>0</active>
+                <name>Tracker1</name>
+                <sallowspecific>0</sallowspecific>
+                <model>WebShopApps\Tracker\Model\Carrier\Tracker2</model>
+                <title>WebShopApps Tracker 2</title>
+            </tracker2>
         </carriers>
         <extension_version>0.0.0</extension_version>
     </default>

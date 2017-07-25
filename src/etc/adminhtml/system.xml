@@ -64,6 +64,25 @@
                     <comment>Enter Manual Tracking URL. Must include #TRACKNUM#</comment>
                 </field>
             </group>
+            <group id="tracker2" translate="label" type="text" sortOrder="510" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>WebShopApps Tracker 2</label>
+                <field id="active" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Tracking Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="title" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Title</label>
+                </field>
+                <field id="preurl" translate="label" type="select" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Pre-Configured Tracking URL</label>
+                    <comment>Select from known Pre-Configured URL's</comment>
+                    <source_model>WebShopApps\Tracker\Model\Config\Source\Preurl</source_model>
+                </field>
+                <field id="url" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Manual Tracking URL</label>
+                    <comment>Enter Manual Tracking URL. Must include #TRACKNUM#</comment>
+                </field>
+            </group>
         </section>
     </system>
 </config>
