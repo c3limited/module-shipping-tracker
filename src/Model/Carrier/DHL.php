@@ -33,7 +33,7 @@
  */
 namespace WebShopApps\Tracker\Model\Carrier;
 
-class Tracker1 extends \WebShopApps\Tracker\Model\Carrier\AbstractCarrier implements
+class DHL extends \WebShopApps\Tracker\Model\Carrier\AbstractCarrier implements
     \Magento\Shipping\Model\Carrier\CarrierInterface
 {
     protected $_code = 'tracker1';
@@ -45,6 +45,6 @@ class Tracker1 extends \WebShopApps\Tracker\Model\Carrier\AbstractCarrier implem
      */
     public function getAllowedMethods()
     {
-        return ['tracker1' => $this->getConfigData('name')];
+        return ['dhl' => $this->getConfigData('name')];
     }
 }

@@ -36,20 +36,31 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
     <default>
         <carriers>
-            <tracker1>
-                <active>0</active>
-                <name>Tracker1</name>
+            <dpd>
+                <active>1</active>
+                <name>DPD</name>
                 <sallowspecific>0</sallowspecific>
-                <model>WebShopApps\Tracker\Model\Carrier\Tracker1</model>
-                <title>WebShopApps Tracker 1</title>
-            </tracker1>
-            <tracker2>
-                <active>0</active>
-                <name>Tracker1</name>
+                <model>WebShopApps\Tracker\Model\Carrier\DPD</model>
+                <title>DPD tracker</title>
+                <preurl>dpd_uk</preurl>
+            </dpd>
+            <dhl>
+                <active>1</active>
+                <name>DHL</name>
                 <sallowspecific>0</sallowspecific>
-                <model>WebShopApps\Tracker\Model\Carrier\Tracker2</model>
-                <title>WebShopApps Tracker 2</title>
-            </tracker2>
+                <model>WebShopApps\Tracker\Model\Carrier\DHL</model>
+                <title>DHL tracker</title>
+                <preurl>dhl_uk</preurl>
+            </dhl>
+            <dachser>
+                <active>1</active>
+                <name>Dachser</name>
+                <sallowspecific>0</sallowspecific>
+                <model>WebShopApps\Tracker\Model\Carrier\Dachser</model>
+                <title>Dachser tracker</title>
+                <preurl>none</preurl>
+                <url>http://partner.dachser.com/shp2/?wicket:interface=:5:pnlHead:frmHead:btnSearch::IActivePageBehaviorListener:0:-1&wicket:ignoreIfNotActive=true&random=0.35369399622175934&tfiSearch=#TRACKNUM#</url>
+            </dachser>
         </carriers>
         <extension_version>0.0.0</extension_version>
     </default>

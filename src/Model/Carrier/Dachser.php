@@ -33,7 +33,7 @@
  */
 namespace WebShopApps\Tracker\Model\Carrier;
 
-class Tracker2 extends \WebShopApps\Tracker\Model\Carrier\AbstractCarrier implements
+class Dachser extends \WebShopApps\Tracker\Model\Carrier\AbstractCarrier implements
     \Magento\Shipping\Model\Carrier\CarrierInterface
 {
     protected $_code = 'tracker2';
@@ -45,6 +45,6 @@ class Tracker2 extends \WebShopApps\Tracker\Model\Carrier\AbstractCarrier implem
      */
     public function getAllowedMethods()
     {
-        return ['tracker2' => $this->getConfigData('name')];
+        return ['dachser' => $this->getConfigData('name')];
     }
 }

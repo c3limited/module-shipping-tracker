@@ -31,32 +31,20 @@
  * Copyright © 2015 Magento. All rights reserved.
  * See COPYING.txt for license details.
  */
-namespace WebShopApps\Tracker\Model\Config\Source;
+namespace WebShopApps\Tracker\Model\Carrier;
 
-class Preurl implements \Magento\Framework\Option\ArrayInterface
+class DPD extends \WebShopApps\Tracker\Model\Carrier\AbstractCarrier implements
+    \Magento\Shipping\Model\Carrier\CarrierInterface
 {
+    protected $_code = 'tracker2';
+    
     /**
-     * @var \WebShopApps\Tracker\Model\Carrier\AbstractCarrier
-     */
-    protected $tracker;
-
-    /**
-     * @param \WebShopApps\Tracker\Model\Carrier\AbstractCarrier $carrierTracker1
-     */
-    public function __construct(\WebShopApps\Tracker\Model\Carrier\AbstractCarrier $tracker)
-    {
-        $this->tracker = $tracker;
-    }
-
-    /**
+     * Get allowed shipping methods
+     *
      * @return array
      */
-    public function toOptionArray()
+    public function getAllowedMethods()
     {
-        $arr = [];
-        foreach ($this->tracker->getCode('preurl') as $k => $v) {
-            $arr[] = ['value' => $k, 'label' => $v];
-        }
-        return $arr;
+        return ['dpd' => $this->getConfigData('name')];
     }
 }

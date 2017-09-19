@@ -85,7 +85,6 @@ class AbstractCarrier extends \Magento\Shipping\Model\Carrier\AbstractCarrier
      */
     public function collectRates(RateRequest $request)
     {
-
         return false;
     }
 

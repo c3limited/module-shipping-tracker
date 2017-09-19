@@ -36,7 +36,7 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
 <system>
         <section id="carriers">
-            <group id="tracker1" translate="label" type="text" sortOrder="500" showInDefault="1" showInWebsite="1" showInStore="1">
+            <group id="dhl" translate="label" type="text" sortOrder="500" showInDefault="1" showInWebsite="1" showInStore="1">
                 <comment>
                     <![CDATA[
 				<div style="padding:10px;background-color:#fff;border:1px solid #ddd;margin-bottom:7px;">
@@ -46,7 +46,7 @@
 		  				</div>
 		  			  ]]>
                 </comment>
-                <label>WebShopApps Tracker 1</label>
+                <label>DHL Tracking</label>
                 <field id="active" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
                     <label>Tracking Enabled</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
@@ -64,8 +64,27 @@
                     <comment>Enter Manual Tracking URL. Must include #TRACKNUM#</comment>
                 </field>
             </group>
-            <group id="tracker2" translate="label" type="text" sortOrder="510" showInDefault="1" showInWebsite="1" showInStore="1">
-                <label>WebShopApps Tracker 2</label>
+            <group id="dpd" translate="label" type="text" sortOrder="510" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>DPD tracking</label>
+                <field id="active" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Tracking Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="title" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Title</label>
+                </field>
+                <field id="preurl" translate="label" type="select" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Pre-Configured Tracking URL</label>
+                    <comment>Select from known Pre-Configured URL's</comment>
+                    <source_model>WebShopApps\Tracker\Model\Config\Source\Preurl</source_model>
+                </field>
+                <field id="url" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Manual Tracking URL</label>
+                    <comment>Enter Manual Tracking URL. Must include #TRACKNUM#</comment>
+                </field>
+            </group>
+            <group id="dachser" translate="label" type="text" sortOrder="520" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Dachser tracking</label>
                 <field id="active" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
                     <label>Tracking Enabled</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
