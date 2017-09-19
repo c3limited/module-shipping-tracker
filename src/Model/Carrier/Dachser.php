@@ -36,7 +36,7 @@ namespace WebShopApps\Tracker\Model\Carrier;
 class Dachser extends \WebShopApps\Tracker\Model\Carrier\AbstractCarrier implements
     \Magento\Shipping\Model\Carrier\CarrierInterface
 {
-    protected $_code = 'tracker2';
+    protected $_code = 'dachser';
     
     /**
      * Get allowed shipping methods

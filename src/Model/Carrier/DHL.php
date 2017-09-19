@@ -36,7 +36,7 @@ namespace WebShopApps\Tracker\Model\Carrier;
 class DHL extends \WebShopApps\Tracker\Model\Carrier\AbstractCarrier implements
     \Magento\Shipping\Model\Carrier\CarrierInterface
 {
-    protected $_code = 'tracker1';
+    protected $_code = 'dhl';
     
     /**
      * Get allowed shipping methods
