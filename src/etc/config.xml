@@ -59,7 +59,7 @@
                 <model>WebShopApps\Tracker\Model\Carrier\Dachser</model>
                 <title>Dachser tracker</title>
                 <preurl>none</preurl>
-                <url>http://partner.dachser.com/shp2/?wicket:interface=:5:pnlHead:frmHead:btnSearch::IActivePageBehaviorListener:0:-1&wicket:ignoreIfNotActive=true&random=0.35369399622175934&tfiSearch=#TRACKNUM#</url>
+                <url><![CDATA[http://partner.dachser.com/shp2/?wicket:interface=:5:pnlHead:frmHead:btnSearch::IActivePageBehaviorListener:0:-1&wicket:ignoreIfNotActive=true&random=0.35369399622175934&tfiSearch=#TRACKNUM#]]></url>
             </dachser>
         </carriers>
         <extension_version>0.0.0</extension_version>
